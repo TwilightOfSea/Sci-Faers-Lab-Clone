@@ -7,4 +7,4 @@
 - 绘图工具包开源共享，请自行下载体验
 - 软件咨询可加微信：  
 
-<img src="./pic/导出报告.png" alt="导出报告" width="450">  
+<img src="./pic/d8b0ea066a3ff08e58a156ec0d79142.jpg" alt="wechat" width="450">  
