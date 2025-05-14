@@ -10,11 +10,11 @@
     - https://www.bilibili.com/video/BV1SzV1z8Eke/?vd_source=4559e47be658149d4030a5ba8050d24e
 
 - 数据分析部分: 付费，半年700，一年1100，长期使用可另行约定，可加下方微信了解
-    a. 信号监测系统：https://www.bilibili.com/video/BV18eVrzEErs/?vd_source=4559e47be658149d4030a5ba8050d24e
-    b. 亚组分析工具-大数据：https://www.bilibili.com/video/BV1CDVpz9EXK/?vd_source=4559e47be658149d4030a5ba8050d24e
-    c. 亚组分析工具-小数据：https://www.bilibili.com/video/BV14yVpzZEHU/
-    d. 信息统计工具
-    e. 配套小工具
+    1. 信号监测系统：https://www.bilibili.com/video/BV18eVrzEErs/?vd_source=4559e47be658149d4030a5ba8050d24e
+    2. 亚组分析工具-大数据：https://www.bilibili.com/video/BV1CDVpz9EXK/?vd_source=4559e47be658149d4030a5ba8050d24e
+    3. 亚组分析工具-小数据：https://www.bilibili.com/video/BV14yVpzZEHU/
+    4. 信息统计工具
+    5. 配套小工具
 
 - 数据分析部分的导出报告可以在[导出数据示例（绘图依赖数据表）]中查看，和绘图工具包**完美适配**
 
