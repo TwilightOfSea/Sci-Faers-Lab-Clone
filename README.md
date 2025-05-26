@@ -13,7 +13,7 @@
     - https://www.bilibili.com/video/BV1SzV1z8Eke/
 
 - 数据分析部分: 付费，半年700，一年1100，试用期内推送更新，长期使用可另行约定，咨询或购买可加下方微信
-    1. 信号监测系统：https://www.bilibili.com/video/BV18eVrzEErs/
+    1. 信号监测系统：https://www.bilibili.com/video/BV136JEzqEtt/
     2. 亚组分析工具-大数据：https://www.bilibili.com/video/BV1CDVpz9EXK/
     3. 亚组分析工具-小数据：https://www.bilibili.com/video/BV14yVpzZEHU/
     4. 信息统计工具
