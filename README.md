@@ -26,4 +26,4 @@
 
 - Wechat：  
 
-<img src="./pic/d8b0ea066a3ff08e58a156ec0d79142.jpg" alt="wechat" width="450">  
+<img src="./pic/wechat.jpg" alt="wechat" width="450">  
