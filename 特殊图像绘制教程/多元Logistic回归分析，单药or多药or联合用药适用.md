@@ -1,5 +1,6 @@
 ## 影响结局的多因素逻辑回归分析：
-- [视频教程]()
+- [视频教程总体](https://www.bilibili.com/video/BV1h4KzzfE47)
+- [视频教程-联用药物分析](https://www.bilibili.com/video/BV1u93tzgE1x)
 - 典型文章: [PMC11924625](https://pmc.ncbi.nlm.nih.gov/articles/PMC11924625/)
 
 ### 引言
