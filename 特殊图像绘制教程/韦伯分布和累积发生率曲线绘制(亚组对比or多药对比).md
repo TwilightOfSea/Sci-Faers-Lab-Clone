@@ -1,6 +1,8 @@
-#### [详情看视频演示](https://www.bilibili.com/video/BV1EF75zhEAj/)
+#### [视频教学](https://www.bilibili.com/video/BV1EF75zhEAj/)
+#### [实战演示-多药](https://www.bilibili.com/video/BV1j93izGE9s/)
+#### [实战演示-联用药物](https://www.bilibili.com/video/BV1WygCzBEce/)
 
-#### 图文教程
+## 图文教程如下
 - <img src="../pic/韦伯分布-NEW.png" alt="韦伯分布" width="350"> 
 - <img src="../pic/累积发生率.png" alt="累积发生率" width="350">
 - <img src="../pic/多亚族累计发生率.png" alt="多亚族累计发生率" width="350">
