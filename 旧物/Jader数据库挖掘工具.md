@@ -1,3 +1,4 @@
+- [插件安装演示视频](https://www.bilibili.com/video/BV1y5uFzLE3e/) | 1.52之后的版本会自带，无需安装
 - [数据库结构、挖掘工具使用演示视频](https://www.bilibili.com/video/BV1C732z2ECR/)
 ---
 ### 定位
