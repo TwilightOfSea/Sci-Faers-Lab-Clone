@@ -2,10 +2,15 @@
 - [视频教程总体](https://www.bilibili.com/video/BV1h4KzzfE47)
 - [视频教程-联用药物分析](https://www.bilibili.com/video/BV1u93tzgE1x)
 - 典型文章: [PMC11924625](https://pmc.ncbi.nlm.nih.gov/articles/PMC11924625/)
+- <img src="../pic/统计检验-简单逻辑.png" alt="统计检验-简单逻辑" width="450">
+
+
 
 ### 引言
 - 一个基本问题：我有一组患有某种疾病的病人的数据样本，记录着在的患者年龄，以及患者最终是否死亡。
 - 可以用什么统计学模型检测年龄是否为死亡的影响因素？
+
+
 
 ### 独立样本t检验
 
