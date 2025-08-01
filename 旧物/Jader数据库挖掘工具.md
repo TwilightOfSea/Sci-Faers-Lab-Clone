@@ -1,9 +1,12 @@
 - [插件安装演示视频](https://www.bilibili.com/video/BV1y5uFzLE3e/) | 1.52之后的版本会自带，无需安装
 - [数据库结构、挖掘工具使用演示视频](https://www.bilibili.com/video/BV1C732z2ECR/)
+- [预处理功能、亚组分析模块演示视频](https://www.bilibili.com/video/BV1PW83zaEqm/)
 ---
-### 定位
+### 基础说明
 - Jader是日本厚生劳动省（PMDA）的药物-不良反应报告数据库，相较于FDA的FAERS数据库，数据量和大小仅5%不到。常配合FAERS数据库进行结论验证、联合使用，不建议单独用这个数据库来做。
-- 作为SciFaersLab的免费插件使用，现最新1.52版本请参考上边视频和邮箱的推送安装，后续版本自带，无需额外安装 
+- 作为SciFaersLab的免费插件使用，数据库和分析程序已加入SciFaersLab整合包中，无需手动安装
+- [点击这里跳转PMDA下载JADER数据库](https://www.pmda.go.jp/safety/info-services/drugs/adr-info/suspected-adr/0005.html)
+
 
 ### 操作方法
 - <img src="../pic/Jader插件运行结束界面.png" alt="Jader插件运行结束界面" width="250">  
@@ -33,7 +36,7 @@
 
 <img src="../pic/JADER亚组分析.png" alt="JADER亚组分析" width="250">
 
-```python
+```java
 可以针对如下亚组进行筛出，与进一步分析：
     '有害事象 | 不良事件(PT)': 'REAC',
     '原疾患等 | 患者过往病史': 'HIST', 
