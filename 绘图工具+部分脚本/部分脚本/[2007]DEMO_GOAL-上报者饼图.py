@@ -57,7 +57,7 @@ def plot(data_path, output_path):
     plt.setp(autotexts, size=10, color='white', weight='bold')
 
     # 添加统计注释
-    ax.annotate(f'Total samples: {data.sum():,}\nUnique codes: {len(data)}',
+    ax.annotate(f'Total samples: {data.sum():,}',
                 xy=(0.5, -0.05),
                 xycoords='axes fraction',
                 ha='center',

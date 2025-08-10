@@ -3,17 +3,28 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-# 设置学术图表格式
+# 采用学术风格配置
+plt.style.use('seaborn-v0_8-paper')
 plt.rcParams.update({
-    'font.family': 'Times New Roman',
-    'font.size': 12,
+    'figure.dpi': 300,
+    'font.size': 11,  # 略微增大基础字号
     'axes.labelsize': 14,
     'axes.titlesize': 16,
-    'figure.dpi': 300
+    'xtick.labelsize': 12,
+    'ytick.labelsize': 12,
+    'font.family': 'Arial',
+    'axes.spines.right': False,
+    'axes.spines.top': False,
+    'axes.linewidth': 1.2,  # 增强坐标轴可见性
+    'xtick.major.size': 4,  # 调整刻度标记尺寸
+    'xtick.major.width': 1.2,
+    'ytick.major.size': 4,
+    'ytick.major.width': 1.2,
 })
 
 def plot(data_path, output_path):
     data = pd.read_csv(data_path)
+    
     # 数据预处理
     filtered_data = data['age_group'].dropna()
     filtered_data = filtered_data[filtered_data != 'Missing']
@@ -21,55 +32,66 @@ def plot(data_path, output_path):
 
     # 计算频数和百分比
     counts = filtered_data.value_counts().sort_index()
-    percentages = 100 * counts / counts.sum()
+    total = counts.sum()
+    percentages = 100 * counts / total
 
-    # 创建画布
-    fig, ax = plt.subplots(figsize=(12, 10), facecolor='white')
+    # 学术风格调色板（低饱和度蓝灰色系）
+    colors = [
+        '#4F6DA8', '#6B8CAB', '#88A9C3',  # 主色系
+        '#A5C6DD', '#C2E3F6', '#5A7B9E',  # 辅助色
+        '#3E5F8A', '#2D4666'
+    ]
 
-    # 生成动态标签：仅显示≥5%的标签
-    labels = [label if percentages.loc[label] >=5 else '' for label in counts.index]
+    # 标签格式优化：使用千位分隔符，仅显示≥3%的标签
+    labels = [
+        f"[{age}] {count:,} ({pct:.1f}%)" if pct >= 3 else ''
+        for age, count, pct in zip(counts.index, counts, percentages)
+    ]
+
+    # 创建图表
+    fig, ax = plt.subplots(figsize=(8, 8))
+
+    # 增强文本对比度设置
+    text_kwargs = {
+        'fontsize': 12,
+        'color': '#333333',  # 深灰色提升可读性
+        'weight': 'normal'  # 取消加粗显示
+    }
 
     # 绘制饼图
     wedges, texts, autotexts = ax.pie(
         counts,
         labels=labels,
-        autopct=lambda p: f'{p:.1f}%' if p >=5 else '',
+        colors=colors[:len(counts)],  # 动态匹配颜色数量
+        autopct=lambda p: f'{p:.1f}%' if p >= 5 else '',
         startangle=90,
-        colors=sns.color_palette("pastel"),
-        pctdistance=0.8,
-        labeldistance=1.05,
-        wedgeprops={'linewidth': 0.5, 'edgecolor': 'black'},
-        textprops={'fontsize': 12}
+        textprops=text_kwargs,
+        wedgeprops={
+            'edgecolor': '#666666',  # 中性灰分隔线
+            'linewidth': 1.0,        # 适当减细线宽
+            'linestyle': '-'         # 明确线型
+        },
+        pctdistance=0.8  # 将百分比向内移动
     )
 
-    # 设置百分比格式
+    # 优化标签显示效果
+    for text in texts:
+        text.set_alpha(0.9)  # 轻微透明处理
+    
+    # 统一百分比文本样式
     for autotext in autotexts:
-        if autotext.get_text() == '':
-            autotext.set_visible(False)
-        else:
-            autotext.set_color('black')
-            autotext.set_fontsize(11)
-            autotext.set_fontstyle('normal')
+        autotext.set_color('#333333')
+        autotext.set_alpha(0.9)
 
-    # 添加中心注释
-    centre_circle = plt.Circle((0,0), 0.7, fc='white')
-    ax.add_artist(centre_circle)
-    # ax = plt.subplots(figsize=(7, 5))
-
-    # 设置图例（右下角）
-    ax.legend(
-        wedges,
-        [f"{l} (n={c}, {p:.1f}%)" for l, c, p in zip(counts.index, counts, percentages)],
-        title="Age Groups",
-        loc='lower right',
-        bbox_to_anchor=(1.2, 0.1),
-        frameon=False,
-        fontsize=10,
-        title_fontsize=12
-    )
-    # 设置长宽比保证圆形
-    # ax.axis('equal')
+    # 添加副标题说明
+    plt.suptitle('Age Group Distribution Analysis', 
+                y=0.93, fontsize=13, color='#444444')
+    
+    # 添加数据来源说明
+    ax.text(0.5, -0.1, f"Total N = {total:,}\nData source: Survey Dataset",
+           transform=ax.transAxes, ha='center', fontsize=10,
+           color='#666666')
 
     # 保存图片
-    plt.savefig(output_path)
-    plt.show()
+    plt.savefig(output_path, bbox_inches='tight', dpi=300)
+    plt.close()  # 避免内存泄漏

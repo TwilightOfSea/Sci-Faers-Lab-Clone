@@ -17,7 +17,7 @@ def plot(data_path, output_path):
 
     plot_data = top_8.copy()
     if others_sum > 0:
-        others_row = pd.DataFrame({'pt': ['Others'], 'a': [others_sum]})
+        others_row = pd.DataFrame({'pt': ['OTHERS'], 'a': [others_sum]})
         plot_data = pd.concat([plot_data, others_row], ignore_index=True)
 
     # 设置图形

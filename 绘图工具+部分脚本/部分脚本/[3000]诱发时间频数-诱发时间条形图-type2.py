@@ -110,8 +110,8 @@ def plot(data_path, output_path):
                 ha='left', va='center', color='black', fontsize=8)
 
     # 添加标题和轴标签
-    ax.set_title('Time to event onset (days)', size = 8)
-    ax.set_xlabel('Percentage (Left) / Count (Right)', size = 8)
+    ax.set_title('Time to event onset (days)', size = 14, fontweight='bold')
+    ax.set_xlabel('Percentage (Left) / Count (Right)', size = 12, fontweight='bold')
     # ax.set_ylabel('Duration Groups')
     plt.yticks(fontsize=8)
     plt.xticks(fontsize=8)

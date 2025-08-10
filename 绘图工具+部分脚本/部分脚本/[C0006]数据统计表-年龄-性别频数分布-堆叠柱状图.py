@@ -41,12 +41,16 @@ def plot(data_path, output_path):
     # 定义颜色（色盲友好且符合性别惯例）
     colors = {'F': '#4C72B0', 'M': '#DD8452'}
 
-    # 绘制堆叠柱状图
+    # 计算每个堆叠柱的顶部高度
+    stack_tops = []
     bottom = None
+    
+    # 绘制堆叠柱状图并记录每个柱子的顶部高度
     for sex in ['F', 'M']:
+        heights = df[sex].values
         ax.bar(
             x=range(len(df.index)),
-            height=df[sex],
+            height=heights,
             bottom=bottom,
             width=0.6,
             color=colors[sex],
@@ -55,9 +59,11 @@ def plot(data_path, output_path):
             linewidth=0.5
         )
         if bottom is None:
-            bottom = df[sex].values
+            bottom = heights.copy()
+            stack_tops = heights.copy()
         else:
-            bottom += df[sex].values
+            bottom += heights
+            stack_tops = bottom.copy()  # 更新为当前堆叠的总高度
 
     # 坐标轴设置
     ax.set_xticks(range(len(df.index)))
@@ -76,15 +82,20 @@ def plot(data_path, output_path):
         loc='upper right'
     )
 
-    # 计算最大总计值并设置 y 轴上限
-    max_total = df.sum(axis=1).max()
-    ax.set_ylim(0, max_total * 1.1)  # 增加 10% 的空间以容纳标签
+    # 计算y轴上限，确保比最高柱子高20%
+    max_stack_top = max(stack_tops)
+    y_upper_limit = max_stack_top * 1.2  # 比最高柱子高20%
+    ax.set_ylim(0, y_upper_limit)
+
+    # 计算标签位置（在最高柱子顶部之上一个合适的距离）
+    label_offset = max_stack_top * 0.02  # 标签距离柱顶2%的距离
 
     # 添加数值标签（总计）
-    for i, total in enumerate(df.sum(axis=1)):
+    for i, stack_top in enumerate(stack_tops):
+        total = df.sum(axis=1).iloc[i]
         ax.text(
             x=i,
-            y=total + max_total * 0.02 -200,  # 标签位置稍微调整
+            y=stack_top + label_offset,
             s=str(int(total)),
             ha='center',
             va='bottom',

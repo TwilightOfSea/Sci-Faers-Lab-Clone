@@ -1,7 +1,6 @@
 import warnings
 
 warnings.filterwarnings('ignore')
-import matplotlib.pyplot as plt
 import pandas as pd
 import matplotlib.pyplot as plt
 from venn import venn 
