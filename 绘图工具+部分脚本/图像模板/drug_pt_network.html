@@ -1,0 +1,133 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Drug-PT Network Visualization</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+            #chart { border: 1px solid #ccc; }
+            .drug-node { cursor: move; }
+            .pt-node { cursor: move; }
+            .drug-label { font-size: 12px; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+            .pt-label { font-size: 10px; text-anchor: middle; dominant-baseline: hanging; }
+            .link { stroke-width: 2; opacity: 0.7; }
+        </style>
+    </head>
+    <body>
+        <h1>Drug-Adverse Event Network</h1>
+        <svg id="chart" width="800" height="600"></svg>
+        
+        <script>
+            const drugs = [{"id": "Drug1", "x": 550.0, "y": 300.0, "color": "#FF6B6B"}, {"id": "Drug2", "x": 325.0, "y": 429.9038105676658, "color": "#4ECDC4"}, {"id": "Drug3", "x": 324.99999999999994, "y": 170.09618943233423, "color": "#45B7D1"}];
+            const pts = [{"id": "EYELID OEDEMA", "x": 90.0, "y": 240.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "VISUAL FIELD DEFECT", "x": 216.6009372842124, "y": 130.10360864641473, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "EYE PRURITUS", "x": 130.0, "y": 280.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "EYE IRRITATION", "x": 150.0, "y": 300.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "BLINDNESS UNILATERAL", "x": 170.0, "y": 320.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "BLINDNESS", "x": 190.0, "y": 340.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "EYE PAIN", "x": 344.56494043438613, "y": 543.7764430189202, "color": "#4ECDC4", "connections": ["Drug2"]}, {"id": "VISUAL ACUITY REDUCED", "x": 90.0, "y": 240.0, "color": "#49c2ca", "connections": ["Drug2", "Drug3"]}, {"id": "OCULAR HYPERAEMIA", "x": 344.564940434386, "y": 56.22355698107981, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "VISUAL DISTURBANCE", "x": 419.0817296402351, "y": 50.72928853566256, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "CATARACT", "x": 525.0, "y": 516.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "EYELID PTOSIS", "x": 344.56494043438613, "y": 543.7764430189202, "color": "#4ECDC4", "connections": ["Drug2"]}, {"id": "GLAUCOMA", "x": 440.0, "y": 340.0, "color": "#86a5aa", "connections": ["Drug1", "Drug2", "Drug3"]}, {"id": "EYE SWELLING", "x": 585.0, "y": 576.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "RETINAL DETACHMENT", "x": 419.0817296402351, "y": 50.72928853566256, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "BLEPHARITIS", "x": 174.58436663234525, "y": 191.88990688442146, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "LACRIMATION INCREASED", "x": 505.0, "y": 496.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "OCULAR MYASTHENIA", "x": 274.99999999999994, "y": 83.49364905389035, "color": "#45B7D1", "connections": ["Drug3"]}, {"id": "EYE HAEMORRHAGE", "x": 638.8341222814015, "y": 373.8800516653349, "color": "#FF6B6B", "connections": ["Drug1"]}, {"id": "PHOTOPHOBIA", "x": 174.5843666323453, "y": 408.11009311557865, "color": "#4ECDC4", "connections": ["Drug2"]}, {"id": "VISION BLURRED", "x": 585.0, "y": 576.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "DRY EYE", "x": 465.0, "y": 23.493649053890323, "color": "#a2919e", "connections": ["Drug1", "Drug3"]}, {"id": "VISUAL IMPAIRMENT", "x": 485.0, "y": 476.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "DIPLOPIA", "x": 505.0, "y": 496.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "MACULAR DEGENERATION", "x": 525.0, "y": 516.5063509461097, "color": "#a69c97", "connections": ["Drug1", "Drug2"]}, {"id": "EYE DISORDER", "x": 419.0817296402352, "y": 549.2707114643374, "color": "#4ECDC4", "connections": ["Drug2"]}];
+            
+            const links = [];
+            pts.forEach(pt => {
+                pt.connections.forEach(drug => {
+                    links.push({
+                        source: drug,
+                        target: pt.id,
+                        color: pt.color
+                    });
+                });
+            });
+            
+            const svg = d3.select("#chart");
+            
+            // 绘制连接线
+            const linkElements = svg.selectAll(".link")
+                .data(links)
+                .enter()
+                .append("line")
+                .attr("class", "link")
+                .attr("stroke", d => d.color);
+            
+            // 绘制药物节点
+            const drugNodes = svg.selectAll(".drug-node")
+                .data(drugs)
+                .enter()
+                .append("circle")
+                .attr("class", "drug-node")
+                .attr("r", 25)
+                .attr("fill", d => d.color)
+                .attr("stroke", "#333")
+                .attr("stroke-width", 2);
+            
+            // 绘制PT节点
+            const ptNodes = svg.selectAll(".pt-node")
+                .data(pts)
+                .enter()
+                .append("circle")
+                .attr("class", "pt-node")
+                .attr("r", 8)
+                .attr("fill", d => d.color)
+                .attr("stroke", "#333")
+                .attr("stroke-width", 1);
+            
+            // 添加药物标签
+            const drugLabels = svg.selectAll(".drug-label")
+                .data(drugs)
+                .enter()
+                .append("text")
+                .attr("class", "drug-label")
+                .text(d => d.id);
+            
+            // 添加PT标签
+            const ptLabels = svg.selectAll(".pt-label")
+                .data(pts)
+                .enter()
+                .append("text")
+                .attr("class", "pt-label")
+                .text(d => d.id);
+            
+            // 更新位置函数
+            function updatePositions() {
+                drugNodes.attr("cx", d => d.x).attr("cy", d => d.y);
+                ptNodes.attr("cx", d => d.x).attr("cy", d => d.y);
+                drugLabels.attr("x", d => d.x).attr("y", d => d.y);
+                ptLabels.attr("x", d => d.x).attr("y", d => d.y + 15);
+                
+                linkElements
+                    .attr("x1", d => {
+                        const source = drugs.find(drug => drug.id === d.source) || pts.find(pt => pt.id === d.source);
+                        return source.x;
+                    })
+                    .attr("y1", d => {
+                        const source = drugs.find(drug => drug.id === d.source) || pts.find(pt => pt.id === d.source);
+                        return source.y;
+                    })
+                    .attr("x2", d => {
+                        const target = drugs.find(drug => drug.id === d.target) || pts.find(pt => pt.id === d.target);
+                        return target.x;
+                    })
+                    .attr("y2", d => {
+                        const target = drugs.find(drug => drug.id === d.target) || pts.find(pt => pt.id === d.target);
+                        return target.y;
+                    });
+            }
+            
+            // 添加拖拽功能
+            const dragDrug = d3.drag()
+                .on("drag", function(event, d) {
+                    d.x = event.x;
+                    d.y = event.y;
+                    updatePositions();
+                });
+            
+            const dragPT = d3.drag()
+                .on("drag", function(event, d) {
+                    d.x = event.x;
+                    d.y = event.y;
+                    updatePositions();
+                });
+            
+            drugNodes.call(dragDrug);
+            ptNodes.call(dragPT);
+            
+            // 初始化位置
+            updatePositions();
+        </script>
+    </body>
+    </html>
+    
