@@ -1,5 +1,5 @@
-- 视频教程：数据库更新、数据挖掘&亚组分析
-- 视频教程：支持100+专业SCI图片绘制
+- [视频教程](https://www.bilibili.com/video/BV1aWmgBeEoW/)：数据库更新、数据挖掘&亚组分析,支持100+专业SCI图片绘制
+
 
 ### 基础说明
 - Canada Vigilance Adverse Reaction Online Database药物-不良反应报告数据库，简称CVARD，相较于FDA的FAERS数据库，字段非常丰富，但是数据量和大小较小。常配合FAERS数据库进行结论验证、联合使用。目前为止涉及到CVARD数据库的文章数量在100篇以下。
