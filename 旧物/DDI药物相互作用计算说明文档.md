@@ -131,10 +131,10 @@ Table 1 shows the 4×2 contingency table for drug-drug interaction signal analys
 
 |                       | AEsofInterest | OtherAEs | Total |
 |-----------------------|----------------|----------|--------|
-| Concomitant use of DRUG1 and NSAIDs | n111           | n110     | n11+  |
-| DRUG1 without NSAIDs               | n101           | n100     | n10+  |
-| NSAIDs without DRUG1               | n011           | n010     | n01+  |
-| Neither DRUG1 nor NSAIDs           | n001           | n000     | n00+  |
+| Concomitant use of DRUG1 and DRUG2 | n111           | n110     | n11+  |
+| DRUG1 without DRUG2               | n101           | n100     | n10+  |
+| DRUG2 without DRUG1               | n011           | n010     | n01+  |
+| Neither DRUG1 nor DRUG2           | n001           | n000     | n00+  |
 | **Total**                          | n++1           | n++0     | n+++  |
 
 
