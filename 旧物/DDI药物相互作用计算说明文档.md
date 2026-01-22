@@ -47,22 +47,39 @@ It is particularly well-suited for monitoring rare Adverse Events (AEs, eg, TdP)
 该模型特别适用于在FAERS等噪声较大的数据库中监测罕见不良事件（如TdP），但需通过临床验证来确认药物组合与不良反应之间的关联性。
 
 2.1.3 计算公式（Calculation Formulas）
-$$E_{111} = n_{11+} \times \left( \frac{n_{101}}{n_{10+}} \right) \times \left( \frac{n_{011}}{n_{01+}} \right)$$
 
+\[
+f_{00}=\frac{n_{001}}{n_{00+}},\quad
+f_{10}=\frac{n_{101}}{n_{10+}},\quad
+f_{01}=\frac{n_{011}}{n_{01+}},\quad
+f_{11}=\frac{n_{111}}{n_{11+}}
+\]
 
-$$V_{111} \approx E_{111} \times \left(\frac{1}{n_{101}} + \frac{1}{n_{011}} - \frac{1}{n_{10+}} - \frac{1}{n_{01+}}\right)$$
+\[
+g_{11}
+=1-\frac{1}{
+\max\!\left(\frac{f_{00}}{1-f_{00}},\,\frac{f_{10}}{1-f_{10}}\right)
++\max\!\left(\frac{f_{00}}{1-f_{00}},\,\frac{f_{01}}{1-f_{01}}\right)
+-\frac{f_{00}}{1-f_{00}}+1
+}
+\]
 
-$$\theta = \frac{n_{111} - E_{111}}{\sqrt{V_{111}}}$$
+\[
+\Omega
+=\log_{2}\!\left(
+\frac{n_{111}+0.5}{g_{11}\,n_{11+}+0.5}
+\right)
+\]
 
-$$\Omega = \left(\frac{\theta}{\sqrt{V_{111}}}\right) \times \left(\frac{V_{111}}{V_{111} + \sigma^2}\right) = \frac{n_{111} - E_{111}}{V_{111} + \sigma^2}$$
+\[
+\Omega_{0.25}
+=\Omega-\frac{\Phi^{-1}(0.975)}{\log_{2}\!\left(\sqrt{n_{111}}\right)}
+\]
 
 信号判定条件：
 
-$$\Omega - \frac{\phi(0.975)}{\log(2)\sqrt{n_{111}}} > 0$$
+$$\Omega_{0.25} > 0$$
 
-其中，$\text{Omega}_{025}$ 定义为：
-
-$$\text{Omega}_{025} = \Omega - \frac{\phi(0.975)}{\log(2)\sqrt{n_{111}}}$$
 
 2.2 加法模型（Additive Model）
 
