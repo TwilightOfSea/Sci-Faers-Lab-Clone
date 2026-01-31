@@ -5,6 +5,8 @@
 - Canada Vigilance Adverse Reaction Online Database药物-不良反应报告数据库，简称CVARD，相较于FDA的FAERS数据库，字段非常丰富，但是数据量和大小较小。常配合FAERS数据库进行结论验证、联合使用。目前为止涉及到CVARD数据库的文章数量在100篇以下。
 - 作为SciFaersLab的免费插件使用，数据库和分析程序在SciFaersLab整合包V1.57版本后整合，无需手动安装。
 - [点击这里跳转下载CVARD数据库](https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/adverse-reaction-database/medeffect-canada-caveat-privacy-statement-interpretation-data-search-canada-vigilance-adverse-reaction-online-database.html)
+- [加拿大警戒系统不良反应在线数据库字段词汇表](https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/adverse-reaction-database/glossary.html)
+- **该数据库采用的数据结构字段名称以官方说明为准，平台为了保证部分析脚本的兼容性，对一些字段名称进行了调整，在使用前请仔细阅读该文档：**[加拿大警戒反应在线数据库 - 数据结构](https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/adverse-reaction-database/canada-vigilance-adverse-reaction-online-database-data-structures.html)
 
 ### 操作方法
 - 1. 数据库文件存放位置：Lib_Data/Data_Lake_Ca，该数据库每月更新，可通过上述链接更新数据库，操作方法可看视频教程  
