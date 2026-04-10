@@ -22,7 +22,7 @@
 ---
 
 ## 核心亮点
-- [FAERS数据挖掘作图脚本数量: 150+](./软件操作说明.md#五画图工具)
+- [FAERS数据挖掘作图脚本数量: 150+](https://www.bilibili.com/video/BV1gBhCzNEpc?vd_source=4559e47be658149d4030a5ba8050d24e&spm_id_from=333.788.videopod.sections)
 - [免费插件：Jader数据库挖掘](./旧物/Jader数据库挖掘工具.md)
 - [免费插件：CVADR数据库挖掘](./旧物/CVARD加拿大数据库挖掘工具.md)
 - [机器学习支持：预测潜在不良反应，传统方法性能比对](./文章套路.md#s机器学习预测药物的不良反应与传统方法的性能比对)
