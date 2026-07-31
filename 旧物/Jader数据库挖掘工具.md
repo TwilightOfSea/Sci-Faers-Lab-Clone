@@ -12,7 +12,7 @@
 - <img src="../pic/Jader插件运行结束界面.png" alt="Jader插件运行结束界面" width="250">  
 
   - 1. 点击Search，弹出日本上市药物数据库网站，复制药物名称
-  - 2. 粘贴到输入框中，点击Start Analysis按钮即可
+  - 2. 粘贴到输入框中，点击Start Analysis按钮即可【已支持联用排除的复杂筛选逻辑】
   - 3. 导出报告在该插件的同目录的Report文件夹中
 
 

@@ -217,6 +217,9 @@ C(dur_group)：持续时间组
 1. **确定研究结局类型**：  
    - 若以**特定不良事件（PT）**为因变量，命名工作簿为 **PT.xlsx**（例：`DIZZINESS.xlsx`），需使用大写医学专业术语。  
    - 若以**特定报告结局（OUTC）**为因变量，命名工作簿为 **OUTC_代码.xlsx**（例：`DE.xlsx`），具体代码需与数据库中保持一致。
+- 现支持用户通过纳入复数PT作为结果变量分析，添加了辅助批量替换脚本[P2004]，[演示视频](https://www.bilibili.com/video/BV19SRKByE9a?vd_source=4559e47be658149d4030a5ba8050d24e&spm_id_from=333.788.videopod.sections)  
+
+
   <img src="../pic/因素.png" alt="因素" width="100">
 ---
 
