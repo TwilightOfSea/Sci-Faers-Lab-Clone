@@ -1,4 +1,4 @@
-- [视频教程]([www.bilibili.com](https://www.bilibili.com/video/BV1FQ24BxEFW/))
+- [视频教程][(https://www.bilibili.com/video/BV1FQ24BxEFW/)]
   
 
 ## 第一步
