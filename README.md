@@ -9,10 +9,9 @@ SciFaersLab 面向医学、药学及生命科学研究人员，
 
 ---
 ## 🚀 快速开始
-
-- 📖 [文章套路归纳](./文章套路.md) —— 推荐首次使用者阅读
+- 🎬 [软件流程实机演示-faers数据挖掘教程](https://www.bilibili.com/video/BV1AHeozNEXt/)
 - 🖥️ [软件操作说明](./软件操作说明.md) —— 查看完整功能及操作方法
-- 🎬 [免费视频教程](https://www.bilibili.com/video/BV1AHeozNEXt/)
+- 📖 [文章套路归纳](./文章套路.md) 
 - 📊 [绘图工具包](https://www.bilibili.com/video/BV1KApvzmENr/)
 - 📋 [当前数据库覆盖范围和本平台方法学说明](./数据库范围和方法说明.md)
 
