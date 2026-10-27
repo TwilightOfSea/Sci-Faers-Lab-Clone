@@ -1,3 +1,5 @@
+<p align="center"><img src="./pic/LOGO白底.png" alt="SciFaersLab" width="260"></p>
+
 # SciFaersLab
 
 **把药物警戒数据挖掘、统计分析和论文绘图放进一个零代码工作流。覆盖90%FAERS数据挖掘论文套路**
