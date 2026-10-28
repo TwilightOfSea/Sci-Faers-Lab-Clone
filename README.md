@@ -84,7 +84,7 @@
 | [文章套路](./文章套路.md) | FAERS 研究设计、图表组合与常见文章结构 |
 | [数据库范围和方法说明](./数据库范围和方法说明.md) | 数据库覆盖范围和论文方法部分说明 |
 | [功能模块详解](./功能模块详解.md) | 查看全部功能与拓展模块 |
-| [FAERS 论文收藏集](./FAERS论文收藏集/Readme请读我.md) | 按研究类型整理的代表性文章 |
+| [FAERS 论文方法索引](https://datapod.space/faers-paper/) | 按数据库、药物分析类型和研究方法筛选 FAERS 论文 |
 | [公众号文献导读](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk5MDU3NjYxOQ==&action=getalbum&album_id=3998224450897313809#wechat_redirect) | 文献解读与文章套路解析 |
 
 ## 常见问题
