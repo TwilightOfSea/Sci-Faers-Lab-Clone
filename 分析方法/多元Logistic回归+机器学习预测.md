@@ -62,11 +62,8 @@ Elastic Net 在 Logistic Regression 的损失函数中加入 L1 和 L2 正则化
 
 **注意当前脚本的实际实现：**
 
-当前脚本默认使用普通 Logistic Regression；只有普通模型拟合失败时，才使用 `fit_regularized(method='l1')` 进行回退。
-
-这属于 LASSO（L1 正则化），并不是完整的 Elastic Net（L1 + L2）。
-
-因此，如果要在论文或教程中称其为 Elastic Net Logistic Regression，需要确认实际代码使用了同时包含 L1 和 L2 惩罚的模型。
+- [P2001a-P2002b]脚本默认使用普通 Logistic Regression；只有普通模型拟合失败时，才使用 `fit_regularized(method='l1')` 进行回退。这属于 LASSO（L1 正则化），并不是完整的 Elastic Net（L1 + L2）
+- [P2005a-P2006b]脚本使用了完整的 Elastic Net Logistic Regression(弹性网络逻辑回归)，而不是普通 Logistic Regression
 
 ---
 
