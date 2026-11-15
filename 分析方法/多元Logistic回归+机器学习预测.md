@@ -1,5 +1,5 @@
 # FAERS 数据挖掘：Elastic Net、XGBoost 与机器学习预测模型解读
-
+- 需要先阅读这个资料：[多元逻辑回归](./多元Logistic回归分析，单药or多药or联合用药适用.md)
 ## 1. Elastic Net Logistic 与普通 Logistic Regression 的区别
 
 ### 1.1 普通 Logistic Regression
