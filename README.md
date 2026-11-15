@@ -15,6 +15,7 @@
 
 | 我想 | 从这里开始 |
 |---|---|
+| 从零开始学习FAERS数据挖掘 | [入门课程01：总体概述](https://www.bilibili.com/video/BV1uifhYdEQn/) |
 | 看软件实际运行 | [完整流程演示](https://www.bilibili.com/video/BV1AHeozNEXt/) |
 | 查找全部功能 | [查看功能模块详解](./功能模块详解.md) |
 | 免费体验论文绘图 | [下载绘图工具 v3.0](./绘图工具+部分脚本/绘图工具v3.0下载链接.md) |
