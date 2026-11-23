@@ -129,7 +129,7 @@ Topic discovery, study structure, and hands-on analysis use a consistent set of 
 </table>
 
 <p align="center">
-<img src="./pic/基本套路流程.png" alt="Basic FAERS research workflow from objective and data source to signal analysis and conclusions" width="360">
+<img src="./pic/基本套路流程.png" alt="Basic FAERS research workflow from objective and data source to signal analysis and conclusions" width="840">
 </p>
 
 <p align="center"><sub>Organize a study around the objective, data source, signal detection, subgroup analysis, time-to-onset, and conclusions.</sub></p>

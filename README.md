@@ -129,7 +129,7 @@
 </table>
 
 <p align="center">
-<img src="./pic/基本套路流程.png" alt="FAERS 数据挖掘研究的基本流程图" width="360">
+<img src="./pic/基本套路流程.png" alt="FAERS 数据挖掘研究的基本流程图" width="840">
 </p>
 
 <p align="center"><sub>从研究目的、数据来源、信号检测到亚组和诱发时间分析，可按流程图组织研究。</sub></p>
