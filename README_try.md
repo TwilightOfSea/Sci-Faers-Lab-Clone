@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./Pic/LOGO白底-round.png" alt="SciFaersLab" width="112" />
+<img src="./pic/LOGO白底-round.png" alt="SciFaersLab" width="112" />
 
 # SciFaersLab
 
@@ -25,7 +25,7 @@ SciFaersLab 面向医学、药学研究生、医生和科研人员，把数据�
 输入目标药物，选择 ROR、PRR、MGPS、BCPNN，系统自动完成数据清洗、去重、信号计算和结果整理；执行进度、运行日志与输出目录集中在同一界面。
 
 <p align="center">
-  <img src="./Pic/新版界面2.png" alt="SciFaersLab 一键完成药物安全信号分析" width="78%" />
+  <img src="./pic/新版界面2.png" alt="SciFaersLab 一键完成药物安全信号分析" width="78%" />
 </p>
 
 <p align="center"><sub>桌面分析系统：药物输入、算法选择、执行进度和运行日志同屏显示。</sub></p>
@@ -33,10 +33,10 @@ SciFaersLab 面向医学、药学研究生、医生和科研人员，把数据�
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src="./Pic/四算法森林图.png" alt="ROR、PRR、BCPNN、MGPS 联合森林图" width="100%" />
+      <img src="./pic/四算法森林图.png" alt="ROR、PRR、BCPNN、MGPS 联合森林图" width="100%" />
     </td>
     <td width="50%" valign="top">
-      <img src="./Pic/多因素逻辑回归图片.png" alt="多因素 Logistic 回归结果与森林图" width="100%" />
+      <img src="./pic/多因素逻辑回归图片.png" alt="多因素 Logistic 回归结果与森林图" width="100%" />
     </td>
   </tr>
   <tr>
@@ -45,10 +45,10 @@ SciFaersLab 面向医学、药学研究生、医生和科研人员，把数据�
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="./Pic/显示-新版绘图.png" alt="论文绘图工具运行与图片导出界面" width="100%" />
+      <img src="./pic/显示-新版绘图.png" alt="论文绘图工具运行与图片导出界面" width="100%" />
     </td>
     <td width="50%" valign="top">
-      <img src="./Pic/AI聊天助手-scifaerslab.png" alt="SciFaersLab AI 助手回答研究方案问题" width="100%" />
+      <img src="./pic/AI聊天助手-scifaerslab.png" alt="SciFaersLab AI 助手回答研究方案问题" width="100%" />
     </td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@ SciFaersLab 面向医学、药学研究生、医生和科研人员，把数据�
 3. 如需完整分析系统，添加微信并备注来意。
 
 <p align="center">
-  <img src="./Pic/wechat.jpg" alt="微信咨询" width="240" />
+  <img src="./pic/wechat.jpg" alt="微信咨询" width="240" />
 </p>
 
 使用环境：Windows 10 / 11 · 建议 8 GB 以上内存 · 至少 5 GB 可用空间
