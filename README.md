@@ -63,7 +63,7 @@
 |---|---|
 | **信号监测** | 按药物名称、商品名或组合条件检索，完成数据库清洗、去重、PT/SOC 映射和常用信号检测，导出统计表与原始结果。 |
 | **亚组分析** | 按年龄、性别、国家、上报者、联合用药或自定义条件分组；支持已有数据精细拆分，也支持大数据人群库构建。 |
-| **统计与预测** | 基线数据、描述统计、多因素 Logistic 回归、机器学习、共病分析、敏感性分析、诱发时间与累积发生率分析。 |
+| **统计与预测** | 基线数据、描述统计、多药分析、联用分析、多因素 Logistic 回归、机器学习、共病分析、敏感性分析、诱发时间与累积发生率分析。 |
 | **论文绘图** | 160+ 图形模板，覆盖森林图、火山图、小提琴图、韦伯分布、共病网络等；支持 PNG、PDF、SVG、EPS、TIFF 导出。 |
 | **其他数据库** | [JADER](./拓展模块/Jader数据库挖掘工具.md)、[CVARD](./拓展模块/CVARD加拿大数据库挖掘工具.md) 插件，以及 [DDI 药物相互作用](./拓展模块/DDI药物相互作用计算说明文档.md)、[网络药理学](./拓展模块/网络药理学拓展模块.md)和多药信号交联模块。 |
 | **选题与答疑** | 9000 种药物历史发表情况、FAERS 论文方法索引，以及内置平台提示词的 AI 聊天助手。 |
@@ -72,31 +72,31 @@
 
 选择脚本、载入结果表、点击运行，即可在平台内预览并保存图像。绘图工具也可以脱离完整分析系统单独使用。
 
-<p align="center">
+<p align="left">
 <img src="./pic/显示-新版绘图.png" alt="SciFaersLab 绘图工具：脚本预览、图像预览与多种格式导出" width="900">
 </p>
 
-<p align="center"><sub>图形界面中完成脚本选择、图像预览和 PNG / PDF / SVG / EPS / TIFF 导出。</sub></p>
+<p align="left"><sub>图形界面中完成脚本选择、图像预览和 PNG / PDF / SVG / EPS / TIFF 导出。</sub></p>
 
 ## 论文图表
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/四算法森林图.png" alt="ROR、PRR、BCPNN、MGPS 四算法森林图" width="420"><br>
 <sub>多算法联合森林图</sub>
 </td>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/多药累积发生率&小提琴对比.png" alt="多药累积发生率、诱发时间与统计表组合图" width="420"><br>
 <sub>累积发生率、诱发时间与统计表</sub>
 </td>
 </tr>
 <tr>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/信号森林图(复杂).png" alt="按 SOC 分组的不良反应信号森林图" width="420"><br>
 <sub>SOC 层级信号森林图</sub>
 </td>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/JADER亚组分析.png" alt="JADER 数据库亚组分析工具" width="420"><br>
 <sub>JADER 亚组分析模块</sub>
 </td>
@@ -107,8 +107,8 @@
 
 平台内置的 AI 助手带有 FAERS 数据分析和 SciFaersLab 操作提示词，适合用来梳理方法、核对操作步骤和启发研究设计。AI 回答由大模型生成，仍需结合原始数据、软件文档和文献判断。
 
-<p align="center">
-<img src="./pic/AI助手使用.png" alt="SciFaersLab AI 聊天助手讨论亚组分析" width="820">
+<p align="left">
+<img src="./pic/AI聊天助手-scifaerslab.png" alt="SciFaersLab AI 聊天助手讨论亚组分析" width="820">
 </p>
 
 ## 研究资源
@@ -117,22 +117,22 @@
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/药物发表情况.png" alt="9000 种药物历史发表情况与 FAERS 文章数量" width="420"><br>
 <sub>药物历史发表情况，用于判断选题空间</sub>
 </td>
-<td align="center" width="50%">
+<td align="left" width="50%">
 <img src="./pic/论文方法索引库.png" alt="FAERS 论文方法索引站" width="420"><br>
 <sub>按数据库、分析类型和研究方法筛选论文</sub>
 </td>
 </tr>
 </table>
 
-<p align="center">
-<img src="./pic/基本套路流程.png" alt="FAERS 数据挖掘研究的基本流程图" width="840">
+<p align="left">
+<img src="./pic/基本套路流程.png" alt="FAERS 数据挖掘研究的基本流程图" width="1200">
 </p>
 
-<p align="center"><sub>从研究目的、数据来源、信号检测到亚组和诱发时间分析，可按流程图组织研究。</sub></p>
+<p align="left"><sub>从研究目的、数据来源、信号检测到亚组和诱发时间分析，可按流程图组织研究。</sub></p>
 
 完整的研究框架、图表组合和常见套路见 [文章套路](./文章套路.md)；数据库覆盖范围、清洗逻辑和 Method 写法见 [数据库范围和方法说明](./数据库范围和方法说明.md)。
 
@@ -205,11 +205,11 @@
 
 ## 开始使用
 
-1. 观看 [平台旗舰演示](https://www.bilibili.com/video/BV1AHeozNEXt/)，确认工作流是否符合你的研究需求。
+1. 观看 [平台实操演示](https://www.bilibili.com/video/BV1AHeozNEXt/)，确认工作流是否符合你的研究需求。
 2. 免费体验 [绘图工具 v3.0](./绘图工具+部分脚本/绘图工具v3.0下载链接.md)，或先阅读 [软件操作说明](./软件操作说明.md)。
 3. 如需完整分析系统，添加微信并备注来意。
 
-<p align="center">
+<p align="left">
 <img src="./pic/wechat.jpg" alt="SciFaersLab 微信咨询" width="240">
 </p>
 
@@ -217,7 +217,7 @@
 
 <div align="center">
 
-国内访问：[Gitee 主站](https://gitee.com/Twilight-of-sea/sci-faers-lab) · 备用镜像：[GitHub](https://github.com/TwilightOfSea/Sci-Faers-Lab-Clone) · 视频教程：[平台旗舰演示](https://www.bilibili.com/video/BV1AHeozNEXt/)
+国内访问：[Gitee 主站](https://gitee.com/Twilight-of-sea/sci-faers-lab) · 备用镜像：[GitHub](https://github.com/TwilightOfSea/Sci-Faers-Lab-Clone) · 视频教程：[平台实操演示](https://www.bilibili.com/video/BV1AHeozNEXt/)
 
 [English README](README_en.md) · README 最后更新：2026-11-23
 
