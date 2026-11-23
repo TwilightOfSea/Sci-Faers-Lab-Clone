@@ -16,8 +16,8 @@ Built for medical and pharmacy researchers, clinicians, and research teams. Clea
 </p>
 
 <p>
-<a href="README_test.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-README_test.md-lightgrey?style=flat-square"></a>
-<a href="README_test_en.md"><img alt="English" src="https://img.shields.io/badge/English-current-blue?style=flat-square"></a>
+<a href="README.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-README.md-lightgrey?style=flat-square"></a>
+<a href="README_en.md"><img alt="English" src="https://img.shields.io/badge/English-current-blue?style=flat-square"></a>
 </p>
 
 [Quick Start](#quick-start) · [Core Capabilities](#core-capabilities) · [Figures](#paper-figures) · [Research Resources](#research-resources) · [Versions and Service](#versions-and-service) · [FAQ](#faq)
@@ -219,6 +219,6 @@ Support covers software usage and troubleshooting, not paper ghostwriting. For s
 
 China access: [Gitee](https://gitee.com/Twilight-of-sea/sci-faers-lab) · Mirror: [GitHub](https://github.com/TwilightOfSea/Sci-Faers-Lab-Clone) · Video: [Full platform walkthrough](https://www.bilibili.com/video/BV1AHeozNEXt/)
 
-[简体中文 README](README_test.md) · Last updated: 2026-11-23
+[简体中文 README](README.md) · Last updated: 2026-11-23
 
 </div>
