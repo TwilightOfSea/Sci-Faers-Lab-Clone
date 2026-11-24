@@ -219,6 +219,6 @@ Support covers software usage and troubleshooting, not paper ghostwriting. For s
 
 China access: [Gitee](https://gitee.com/Twilight-of-sea/sci-faers-lab) · Mirror: [GitHub](https://github.com/TwilightOfSea/Sci-Faers-Lab-Clone) · Video: [Full platform walkthrough](https://www.bilibili.com/video/BV1AHeozNEXt/)
 
-[简体中文 README](README.md) · Last updated: 2026-11-23
+[简体中文 README](README.md) · Last updated: 2026-11-24
 
 </div>

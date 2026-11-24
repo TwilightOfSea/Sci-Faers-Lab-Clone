@@ -22,7 +22,7 @@
 <a href="README_en.md"><img alt="English" src="https://img.shields.io/badge/English-README_en.md-lightgrey?style=flat-square"></a>
 </p>
 
-[快速入口](#快速入口) · [核心能力](#核心能力) · [论文图表](#论文图表) · [研究资源](#研究资源) · [版本与服务](#版本与服务) · [常见问题](#常见问题)
+[快速入口](#快速入口) · [核心能力](#核心能力) · [论文图表](#论文图表) · [研究资源](#研究资源) · [价格与购买](#版本与服务) · [常见问题](#常见问题)
 
 </div>
 
@@ -38,6 +38,7 @@
 |---|---|
 | 从零开始学习 FAERS 数据挖掘 | [B 站：从零开始教学](https://www.bilibili.com/video/BV1uifhYdEQn/) |
 | 看平台实际运行 | [B 站：平台旗舰演示](https://www.bilibili.com/video/BV1AHeozNEXt/) |
+| 购买完整版或咨询授权 | [查看价格与购买方式](#版本与服务) |
 | 查找全部功能 | [功能模块详解](./功能模块详解.md) |
 | 学习具体操作 | [软件操作说明](./软件操作说明.md) |
 | 设计研究方案 | [文章套路](./文章套路.md) |
@@ -155,6 +156,14 @@
 | 一年 | 1,200 元 | 同上，服务期一年 |
 | 永久版 | 按需求单独报价 | 根据功能范围、设备和使用需求确认 |
 
+<p align="center"><b>购买或咨询完整版服务</b></p>
+
+<p align="center">扫描二维码添加开发者微信，备注 <b>「SciFaersLab 购买」</b>。
+
+<p align="center">
+<img src="./pic/wechat.jpg" alt="SciFaersLab 购买与授权咨询微信二维码" width="240">
+</p>
+
 数据库更新后通过邮箱发送最新整合包，无需逐季下载原始文件。JADER 和 CVARD 也可直接使用官网数据，按对应教程导入。
 
 <details>
@@ -207,11 +216,7 @@
 
 1. 观看 [平台实操演示](https://www.bilibili.com/video/BV1AHeozNEXt/)，确认工作流是否符合你的研究需求。
 2. 免费体验 [绘图工具 v3.0](./绘图工具+部分脚本/绘图工具v3.0下载链接.md)，或先阅读 [软件操作说明](./软件操作说明.md)。
-3. 如需完整分析系统，添加微信并备注来意。
-
-<p align="left">
-<img src="./pic/wechat.jpg" alt="SciFaersLab 微信咨询" width="240">
-</p>
+3. 如需完整分析系统，[查看价格并联系购买](#版本与服务)。
 
 ---
 
@@ -219,6 +224,6 @@
 
 国内访问：[Gitee 主站](https://gitee.com/Twilight-of-sea/sci-faers-lab) · 备用镜像：[GitHub](https://github.com/TwilightOfSea/Sci-Faers-Lab-Clone) · 视频教程：[平台实操演示](https://www.bilibili.com/video/BV1AHeozNEXt/)
 
-[English README](README_en.md) · README 最后更新：2026-11-23
+[English README](README_en.md) · README 最后更新：2026-11-24
 
 </div>
