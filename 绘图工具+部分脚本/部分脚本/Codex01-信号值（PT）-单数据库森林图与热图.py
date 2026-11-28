@@ -128,7 +128,7 @@ def _format_ror_ci(row: pd.Series) -> str:
 
 def _draw_header(ax: plt.Axes, n_rows: int) -> None:
     ax.set_xlim(0, 3.0)
-    ax.set_ylim(n_rows - 0.5, -1.25)
+    ax.set_ylim(n_rows - 0.5, -0.5)
     ax.axis("off")
 
     header_y = -0.72
